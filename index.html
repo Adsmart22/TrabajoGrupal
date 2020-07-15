@@ -3,9 +3,36 @@
   <head>
     <meta charset= "UTF-8">
     <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Mi primera página</title>
   </head>
   <body>
-
+    <!-- Sección que muestra las categorías disponibles con menú de subcategorías -->
+<section class="round_category">
+  <div class="round_img" id="round_img">
+    Categoría 1
+  </div>
+  <div class="round_img" id="round_img">
+    Categoría 2
+  </div>
+  <div class="round_img" id="round_img">
+    Categoría 3
+  </div>
+  <div class="round_img" id="round_img">
+    Categoría 4
+  </div>
+</section>
+<section class="buttons" id="buttons">
+<button class="view_more" onclick="dropdown()">Ver más</button>
+<button class="view_more" onclick="dropdown()">Ver más</button>
+<button class="view_more" onclick="dropdown()">Ver más</button>
+<button class="view_more" onclick="dropdown()">Ver más</button>
+<div class="dropdown-content" id="dropdown_content">
+  <a href="#">Subcategoría 1</a>
+  <a href="#">Subcategoría 2</a>
+  <a href="#">Subcategoría 3</a>
+</div>
+</section>
+<script src="script.js"></script>
   </body>
 </html>
