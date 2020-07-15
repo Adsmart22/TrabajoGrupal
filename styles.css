@@ -1,1 +1,59 @@
- 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    border: 1px solid black;
+    margin: 2%;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: nowrap;
+    padding: 0;
+    height: 60px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    width: 80%;
+    align-content: center;
+}
+
+.elemento_menu {
+    width: 16%;
+    text-align: center;
+    align-self: center;
+    margin: 0;
+    
+}
+
+#carrito_compra {
+    display: flex;
+    width: 20%;
+    margin: 0;
+    justify-content: flex-end;
+    padding-right: 3%;
+}
+
+#carrito_compra > img {
+    width: 30%;
+    display: flex;
+    justify-content: end;
+}
+
+#carrusel_imagenes {
+    border: 1px solid black;
+    margin: 2%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#imagen {
+    height: 90%;
+    display: flex;
+}
