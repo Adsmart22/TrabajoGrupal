@@ -5,7 +5,9 @@ function dropdown() {
   }
   
   // Close the dropdown if the user clicks outside of it
+
   /*
+
   window.onclick = function(e) {
     if (!e.target.matches('.view_more')) {
     var myDropdown = document.getElementById("dropdown-content");
@@ -13,7 +15,8 @@ function dropdown() {
         myDropdown.classList.remove('show');
       }
     }
-  }*/
+
+  }
 
 
   /* Redirigir a formulario de compra */
