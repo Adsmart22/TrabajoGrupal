@@ -3,83 +3,58 @@
   <head>
     <meta charset= "UTF-8">
     <meta name= "viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./styles.css" rel="stylesheet" />
-    <title>Carrito de compras</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Mi primera página</title>
+    <link href="styles.css" rel="stylesheet" type=text/css>
   </head>
   <body>
-    <section class="formStyle">
-      <h2>Continuar con la compra</h2>
-      <form class="formUser" >
-        <fieldset>
-          <legend>Datos personales</legend>
-          <label for="name">Nombre</label>
-          <input type="text" maxlength="50" id="name" required />
+    
+    <header>
+      <nav>
+        <ul class="menu">
+          <li class="elemento_menu">Sobre<br> Nosotros</li>
+          <li class="elemento_menu">Mujeres</li>
+          <li class="elemento_menu">Hombres</li>
+          <li class="elemento_menu">Niños</li>
+          <li class="elemento_menu">Compra por <br>categoría</li>
+        </ul>
+        <div id="carrito_compra"><img src="https://www.creativefabrica.com/wp-content/uploads/2019/04/Shopping-cart-icon-by-marco.livolsi2014-6-580x386.jpg" id="imgCarrito"></div>
+      </nav>
+    </header>
 
-          <label for="apPat">Apellido Paterno</label>
-          <input type="text" maxlength="50" id="apPat" required />
+    <main>
+      <div id="carrusel_imagenes">Carrusel de Imagenes
+        <img id="imagen" src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/10/29/15723646165471.jpg">
+      </div>
+    </main>
+    
+    <!-- Sección que muestra las categorías disponibles con menú de subcategorías -->
+<section class="round_category">
+  <div class="round_img" id="round_img">
+    Categoría 1
+  </div>
+  <div class="round_img" id="round_img">
+    Categoría 2
+  </div>
+  <div class="round_img" id="round_img">
+    Categoría 3
+  </div>
+  <div class="round_img" id="round_img">
+    Categoría 4
+  </div>
+</section>
+<section class="buttons" id="buttons">
+<button class="view_more" onclick="dropdown()">Ver más</button>
+<button class="view_more" onclick="dropdown()">Ver más</button>
+<button class="view_more" onclick="dropdown()">Ver más</button>
+<button class="view_more" onclick="dropdown()">Ver más</button>
+<div class="dropdown-content" id="dropdown_content">
+  <a href="#">Subcategoría 1</a>
+  <a href="#">Subcategoría 2</a>
+  <a href="#">Subcategoría 3</a>
+</div>
+</section>
+<script src="script.js"></script>
 
-          <label for="apMat">Apellido Materno</label>
-          <input type="text" maxlength="50" id="apMat" />
-
-          <label for="cellphone">Celular</label>
-          <input type="text" maxlength="10" id="cellphone" required />
-          
-          <label for="phone">Teléfono de casa</label>
-          <input type="text" maxlength="10" id="phone" />
-
-          <label for="mail">Correo electrónico</label>
-          <input type="text" maxlength="60" id="mail" />
-
-          <label for="confirmMail">Confirme su correo</label>
-          <input type="text" maxlength="60" id="confirmMail" />
-
-          <label for="confirmMail">Seleccione el método de entrega</label>
-          <select id ="confirmMail">
-            <option id="t">Tienda</option>
-            <option id="d">Domicilio</option>
-          </select>
-
-          <fieldset id="listadoTiendas">
-            <legend>Información de tiendas</legend>
-            <label for="seleccionTienda">Seleccione la tienda</label>
-            <select id ="seleccionTienda">
-              <option id="uno">Tienda 1</option>
-              <option id="dos">Tienda 2</option>
-              <option id="tres">Tienda 3</option>
-              <option id="cuatro">Tienda 4</option>
-              <option id="cinco">Tienda 5</option>
-            </select>
-            <label for="day">Horario</label>
-            <input type="datetime" maxlength="30" id="day" />
-            <label for="horario">Horario</label>
-            <input type="datetime" maxlength="60" id="horario" />
-          </fieldset>
-          <fieldset id="domiciio">
-            <legend>Información de su domicilio</legend>
-            <label for="calle">Calle</label>
-            <input type="text" maxlength="60" id="calle" />
-            <label for="ciudad">Ciudad</label>
-            <input type="text" maxlength="60" id="ciudad" />
-          </fieldset>
-
-
-        </fieldset>
-        <fieldset>
-          <legend>Información para pago</legend>
-          <label for="typeCard">Ingrese tipo de tarjeta</label>
-          <select id ="typeCard">
-            <option>Mastercard</option>
-            <option>Visa</option>
-            <option>Amex</option>
-          </select>
-          <label for="card">Ingrese los 16 dígitos de su tarjeta</label>
-          <input type="password" maxlength="16" id="card" />
-          <label for="dateVen">Fecha de vencimiento</label>
-          <input type="text" maxlength="10" id="dateVen" />
-          <label for="cvv">CVV</label>
-          <input type="text" maxlength="3" id="cvv" />
-        </fieldset>
-      </form>
-    </section>
   </body>
 </html>

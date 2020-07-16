@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="EN">
+  <head>
+    <meta charset= "UTF-8">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./../styles.css" rel="stylesheet" />
+    <title>Carrito de compras</title>
+  </head>
+  <body>
+    <section class="formStyle">
+      <h2>Continuar con la compra</h2>
+      <form class="formUser" >
+        <fieldset>
+          <legend>Datos personales</legend>
+          <label for="name">Nombre</label>
+          <input type="text" maxlength="50" id="name" required />
+
+          <label for="apPat">Apellido Paterno</label>
+          <input type="text" maxlength="50" id="apPat" required />
+
+          <label for="apMat">Apellido Materno</label>
+          <input type="text" maxlength="50" id="apMat" />
+
+          <label for="cellphone">Celular</label>
+          <input type="text" maxlength="10" id="cellphone" required />
+          
+          <label for="phone">Teléfono de casa</label>
+          <input type="text" maxlength="10" id="phone" />
+
+          <label for="mail">Correo electrónico</label>
+          <input type="text" maxlength="60" id="mail" />
+
+          <label for="confirmMail">Confirme su correo</label>
+          <input type="text" maxlength="60" id="confirmMail" />
+
+          <label for="confirmSend">Seleccione el método de entrega</label>
+          <select id ="confirmSend" onchange="obtenerCombo()">
+            <option value="cerrar" >Selecciona una opción</option>
+            <option value="tienda" id="t">Tienda</option>
+            <option value="dom" id="d">Domicilio</option>
+          </select>
+
+          <fieldset id="listadoTiendas">
+            <legend>Información de tiendas</legend>
+            <label for="seleccionTienda">Seleccione la tienda</label>
+            <select id ="seleccionTienda">
+              <option id="uno">Tienda 1</option>
+              <option id="dos">Tienda 2</option>
+              <option id="tres">Tienda 3</option>
+              <option id="cuatro">Tienda 4</option>
+              <option id="cinco">Tienda 5</option>
+            </select>
+            <label for="day">Fecha</label>
+            <input type="datetime" maxlength="30" id="day" />
+            <label for="horario">Horario</label>
+            <input type="datetime" maxlength="60" id="horario" />
+          </fieldset>
+          <fieldset id="domicilio">
+            <legend>Información de su domicilio</legend>
+            <label for="calle">Calle</label>
+            <input type="text" maxlength="60" id="calle" />
+            <label for="ciudad">Ciudad</label>
+            <input type="text" maxlength="60" id="ciudad" />
+          </fieldset>
+
+
+        </fieldset>
+        <fieldset>
+          <legend>Información para pago</legend>
+          <label for="typeCard">Ingrese tipo de tarjeta</label>
+          <select id ="typeCard">
+            <option id="mastercard">Mastercard</option>
+            <option id="visa">Visa</option>
+            <option id="amex">Amex</option>
+          </select>
+          <label for="card">Ingrese los 16 dígitos de su tarjeta</label>
+          <input type="password" maxlength="16" id="card" />
+          <label for="dateVen">Fecha de vencimiento</label>
+          <input type="text" maxlength="10" id="dateVen" />
+          <label for="cvv">CVV</label>
+          <input type="text" maxlength="3" id="cvv" />
+        </fieldset>
+      </form>
+      <div class="buttonsDiv">
+        <button id="btnSend">Comprar</button>
+        <button id="btnClean">Limpiar</button>
+      </div>
+    </section>
+
+    <script src="./../script2.js"></script>
+  </body>
+</html>
